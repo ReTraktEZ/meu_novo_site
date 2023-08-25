@@ -1,0 +1,169 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+  
+  body {
+    font-family: 'Rajdhani', sans-serif;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #11122e; /* Azul mais escuro */
+    color: white;
+    padding: 10px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;  
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #FFA500;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    position: relative;
+    height: 88.5vh; /* Ajuste o valor de altura conforme necessário */
+  }
+  
+  .carousel {
+    display: block;
+    overflow: hidden;
+    position: absolute; /* Altere para absolute para ocupar o espaço do elemento pai */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100%; /* Ajuste o valor de altura conforme necessário */
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 312%;
+    object-fit: cover;
+  }
+  
+  .carousel-image {
+    flex: 10%;
+    height: 10%;
+    object-fit: cover;
+    width: 1%;
+  }
+    
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+  }
+  
+  /* Sobre a empresa - prévia */
+  .about {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    
+  }
+  
+  .about p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500; /* Usando a variação @500 */
+    
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #11122e; /* Azul mais escuro */
+    color: white;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact,
+  .newsletter {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .contact h3,
+  .newsletter h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .contact p,
+  .newsletter p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .newsletter button:hover {
+    background-color: #FF8C00;
+  }
